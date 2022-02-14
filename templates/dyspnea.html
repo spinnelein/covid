@@ -1,0 +1,30 @@
+{% extends "generic.html" %}
+{% block content %}
+{{ block.super }}
+
+<br>
+No dyspnea:
+    <ul>
+<li>No symptoms of shortness of breath</li>
+<li>Shortness of breath only associated with coughing</li>
+        </ul>
+
+Mild dyspnea:
+    <ul>
+<li>Mild shortness of breath that does not interfere with daily activities
+    (new mild shortness of breath with activities such as climbing one to two flights of stairs or walking briskly)</li>
+</ul>
+
+Moderate dyspnea:
+    <ul>
+<li>Dyspnea that limits activities of daily living
+    (difficulty walking up one flight of stairs, light housekeeping or meal preparation)</li>
+</ul>
+
+Severe dyspnea:
+    <ul>
+<li>Dyspnea at rest</li>
+<li>Patient unable to speak in complete sentences</li>
+<li>Interferes with basic activities such as toileting and dressing</li>
+</ul>
+{% endblock %}

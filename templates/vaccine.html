@@ -1,0 +1,90 @@
+{% extends "generic.html" %}
+{% block content %}
+{{ block.super }}
+<style>
+table.table2 {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+}
+
+table.table2 td, table.table2 th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+    vertical-align: top;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+<br>
+Up to date means a person has received all recommended COVID-19 vaccines, including any booster dose(s) when eligible.
+<br>
+    <h2>When Are You Up to Date?</h2>
+You are up to date with your COVID-19 vaccines when you have followed the current recommendations listed below. The recommendations will be different depending on your age, your health status, and when you first got vaccinated.
+
+Many people who are immunocompromised may need an additional dose as part of their primary vaccine series.
+
+Note that booster shots are not recommended for everyone at this time.
+<table class = 'table2'>
+<tr>
+   <td><b> Pfizer-BioNTech</td>
+    <td><b> Moderna</td>
+    <td><b> Johnson & Johnson’s Janssen</td>
+</tr>
+<tr>
+    <td><b>Ages Recommended</b><br>
+5+ years old</td>
+
+<td><b>Ages Recommended</b><br>
+    18+ years old</td>
+
+<td><b>Ages Recommended</b><br>
+    18+ years old</td>
+</tr>
+<tr>
+    <td><b>Primary Series</b><br>
+2 doses<br>
+    Given 3 weeks (21 days) apart</td>
+
+<td><b>Primary Series</b><br>
+2 doses<br>
+    Given 4 weeks (28 days) apart</td>
+
+<td><b>Primary Series</b><br>
+    1 dose</td>
+</tr>
+
+<tr><td><b>Fully Vaccinated</b><br>
+    2 weeks after final dose in primary series</td>
+
+<td><b>Fully Vaccinated</b><br>
+    2 weeks after final dose in primary series</td>
+
+<td><b>Fully Vaccinated</b><br>
+    2 weeks after 1st dose</td>
+</tr>
+<tr><td><b>Booster Dose</b><br>
+Everyone ages 12+ should get a booster dose at least 5 months after the last dose in their primary series.
+<br><ul>
+        <li>Teens 12–17 should only get a Pfizer-BioNTech COVID-19 Vaccine booster</li>
+        <li>Everyone 18+ should get a booster dose of either Pfizer-BioNTech or Moderna (mRNA COVID-19 vaccines)</li></ul></td>
+<td><b>Booster Dose</b><br>
+    Everyone ages 18+ should get a booster dose of either Pfizer-BioNTech or Moderna (mRNA COVID-19 vaccines) at least 5 months after the last dose in their primary series.</td>
+
+<td><b>Booster Dose</b><br>
+    Everyone ages 18+ should get a booster dose of either Pfizer-BioNTech or Moderna (mRNA COVID-19 vaccines) at least 2 months after the first dose of J&J/Janssen COVID-19 Vaccine. You may get J&J/Janssen in some situations.</td>
+</tr>
+    <tr>
+<td><b>When Boosted</b><br>
+    A person is considered “boosted” and up to date right after getting their booster dose.</td>
+<td><b>When Boosted</b><br>
+A person is considered “boosted” and up to date right after getting their booster dose.</td>
+
+<td><b>When Boosted</b><br>
+    A person is considered “boosted” and up to date right after getting their booster dose.</td>
+</tr>
+</table>
+{% endblock %}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>COVID Recommendation Wizard</title>
+
+    {% load static %}
+    <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.3/clipboard.min.js"></script>
+</head>
+
+<body>
+
+
+<button onclick="location.href = '/'">Restart</button>
+<br>
+<br>
+<h2>
+    {% for a in actions %}
+{{ a |safe }}
+{% endfor %}
+</h2>
+<br>
+Paste the following letter into EPIC if generating a worknote.
+<br>
+ <button class="btn" data-clipboard-target="#worknote">Copy worknote</button>
+<br><br>
+<div id = "worknote">
+ <br>
+    {% for a in worknote %}
+{{ a |safe }}
+{% endfor %}
+</div>
+
+<br><br><br><br><br>
+ <button class="btn" data-clipboard-target="#letter">
+            Copy letter to clipboard
+        </button>
+<div id ="letter">
+{% for a in diagnosis %}
+{{ a |safe }}
+{% endfor %}
+</div>
+
+
+        <script>
+            var btns = document.querySelectorAll('button');
+            var clipboard = new Clipboard(btns);
+
+            clipboard.on('success', function (e) {
+                console.log(e);
+            });
+
+            clipboard.on('error', function (e) {
+                console.log(e);
+            });
+        </script>
+<br><br><hr>
+This is still in testing phase, so if you have any feedback please email covidquiz@slugranch.org with your thoughts. Include this data if there's an issue with a specific scenario. - Thanks!
+{{ form_data }}
+</body>
+</html>
+
